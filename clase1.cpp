@@ -6,7 +6,7 @@ using namespace std;
 //prototipos
 //muestra un menu lee y valida la entrada.
 
-int menu(int);
+int menu();
 
 //reserva memoria dinamica para un arreglo de enteros, recibe de parametro
 //el size del arreglo
