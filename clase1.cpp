@@ -45,7 +45,7 @@ int main(){
 		    break;
 		 case 5://salir del progama
 		    if(array != NULL)
-			    clearArray(array, size);
+			    clearArray(array);
 
 	            break;
 		}
