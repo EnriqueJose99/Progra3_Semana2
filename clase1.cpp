@@ -24,7 +24,7 @@ int readSize();
 
 //main
 int main(){
-	int* array =NULL:
+	int* array =NULL;
 	int size = 0;
 	int option = 0;
 	
@@ -40,7 +40,7 @@ int main(){
 		    	array = createArray(size);
 		    }else{
 		    	clearArray(array);
-			array = createArray(array);
+			array = createArray(size);
 		    }
 		    break;
 		 case 5://salir del progama
@@ -68,12 +68,11 @@ int readSize(){
 }
 //muestra menu y valida entrada
 int menu(){
-	
-	do{
 	int num =0;
+	while(num>= 1 && num <=5){
+	
 	cout<<"Ingrese un numero para entrar a la opciones: "<<endl;
-	cin>>num;                    cin>>size;
-
+	cin>>num;                    
 	cout<<"1.Crear Arreglo"<<endl;
 	cout<<"2.Llenar el Arreglo"<<endl;
 	cout<<"3.Imprimir el Arreglo"<<endl;
@@ -82,7 +81,7 @@ int menu(){
 	if(num>=1 && num <=5)
 		return num;
 
-	}while(num<1 && num>5);
+	}
 	cout<<"Ingrese otra vez un numero: " <<endl;
 }
 
