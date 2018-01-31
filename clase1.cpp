@@ -53,7 +53,6 @@ int main(){
 	return 0;
 }
 
-
 //Reads size
 int readSize(){
     int retVal = 0;
@@ -69,20 +68,16 @@ int readSize(){
 //muestra menu y valida entrada
 int menu(){
 	int num =0;
-	while(num>= 1 && num <=5){
-	
-	cout<<"Ingrese un numero para entrar a la opciones: "<<endl;
-	cin>>num;                    
-	cout<<"1.Crear Arreglo"<<endl;
-	cout<<"2.Llenar el Arreglo"<<endl;
-	cout<<"3.Imprimir el Arreglo"<<endl;
-	cout<<"4.Limpiar el Arreglo"<<endl;
-	cout<<"5.Salir"<<endl;
-	if(num>=1 && num <=5)
+	while(num == 0){
+		cout<<"1.Crear Arreglo"<<endl;
+		cout<<"2.Llenar el Arreglo"<<endl;
+		cout<<"3.Imprimir el Arreglo"<<endl;
+		cout<<"4.Limpiar el Arreglo"<<endl;
+		cout<<"5.Salir"<<endl;
+		cout<<"Ingrese un numero para entrar a la opciones: "<<endl;
+		cin>>num;
 		return num;
-
 	}
-	cout<<"Ingrese otra vez un numero: " <<endl;
 }
 
 //reservar memoria dinamica para un arreglo
@@ -104,8 +99,8 @@ void printArray(int*array, int size){
 	
 	}
 	cout<<endl;
-
 }
+
 
 
 
