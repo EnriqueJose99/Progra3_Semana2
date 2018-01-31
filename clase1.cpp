@@ -23,7 +23,7 @@ void printArray(int*,int);
 int readSize();
 
 //llenar arreglo
-int* fillArray(int*, int); 
+void fillArray(int*, int); 
 
 
 //main
@@ -35,9 +35,6 @@ int main(){
 	while(option != 5){
 	    switch(option = menu()){
                 case 1:
-		    //crear arreglo
-		    //cout<<"Ingrese el tamano del arreglo: "<<endl;
-		    //cin>>size;
 		    size = readSize();
 		    //evitar memory leak
 		  if(array == NULL){
