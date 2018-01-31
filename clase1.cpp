@@ -13,7 +13,7 @@ int menu();
 int* createArray(int);
 
 //clear array
-void clearArray(int*);
+void clearArray(int*&);//agregar el ampersand & es una referencia a un apuntador de enteros
 
 
 //imprime el contenido del arreglo
@@ -52,7 +52,7 @@ int main(){
 		    break;
 		case 4:
 		    clearArray(array);
- 		    array = NULL;
+ 		    //array = NULL;
 		    size = 0;
 		    break;
 		case 5://salir del progama
@@ -115,7 +115,7 @@ int* createArray(int size){
 }
 
 //clear array, remove space from memory
-void clearArray(int* array){
+void clearArray(int*& array){// se agrega aqui tambien
 	delete[] array;
 	array = NULL;
 	//buena practica de programacion en c++ es asignar NULL
