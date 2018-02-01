@@ -129,10 +129,3 @@ void printArray(int*array, int size){
 	}
 	cout<<endl;
 }
-
-
-
-
-
-
-
